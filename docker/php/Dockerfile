@@ -26,7 +26,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
 RUN install-php-extensions @composer
 
 RUN curl -sS https://get.symfony.com/cli/installer | bash \
-    &&  mv /root/.symfony/bin/symfony /usr/local/bin
+    && mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 
 RUN git config --global user.email "contact@simon-micheneau.fr" \
     && git config --global user.name "SimonDevelop"
